@@ -54,4 +54,14 @@ public class PlayerController : MonoBehaviour
         pos.z = 0f;
         transform.position = pos;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.CompareTag("Obstacle"))
+        {
+            GameManager.Instance.EndGame();
+            Debug.Log("Obstacle hit confirmed!");
+        }
+    }
 }
