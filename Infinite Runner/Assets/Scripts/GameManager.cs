@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         ScrollSpeed = Mathf.Min(ScrollSpeed + config.speedIncreaseRate * Time.deltaTime, config.maxSpeed);
         Distance += ScrollSpeed * Time.deltaTime;
 
-        if (scoreText != null) scoreText.text = "Distance: " + (int)Distance;
+        if (scoreText != null) scoreText.text = "Score: " + (int)Distance;
     }
 
     public void EndGame()

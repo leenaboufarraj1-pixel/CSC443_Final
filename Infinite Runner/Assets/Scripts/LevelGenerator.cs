@@ -20,6 +20,9 @@ public class LevelGenerator : MonoBehaviour
     private float _spawnZ;
     private LaneMask _currentExit = LaneMask.All; // first chunk has no upstream constraint
 
+    // Track if we are spawning the very first chunk of the level
+    private bool _isFirstChunk = true;
+
     void Awake()
     {
         _prefabTemplates = new Chunk[chunkPrefabs.Length];
@@ -80,6 +83,16 @@ public class LevelGenerator : MonoBehaviour
     // Socket matching: keep prefabs whose Entry shares at least one open lane with requiredOpen.
     private Chunk PickNextChunk(LaneMask requiredOpen)
     {
+        // FORCE ELEMENT 0: If it's the very first chunk, instantly return Element 0 from templates
+        if (_isFirstChunk)
+        {
+            _isFirstChunk = false; // Turn off flag immediately so the next chunks use normal random logic
+            if (_prefabTemplates.Length > 0)
+            {
+                return _prefabTemplates[0];
+            }
+        }
+
         _candidateBuffer.Clear();
         for (int i = 0; i < _prefabTemplates.Length; i++)
         {

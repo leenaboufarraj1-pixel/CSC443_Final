@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7447576052198095038}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 1, z: 0}
+  m_LocalPosition: {x: 2, y: 0.2, z: 0}
   m_LocalScale: {x: 1.5, y: 2, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7447576052198095038}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 6506396659625774110, guid: a6607eb523e0cfd4ca16eb020b458a8b, type: 3}
 --- !u!23 &3931397001129035673
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -111,8 +111,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.1730762, z: 1.026564}
+  m_Center: {x: 0, y: 0.4725802, z: -0.013281918}
 --- !u!54 &5052287180365236462
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,8 +159,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.9633695, z: 0.0045277597}
-  m_Center: {x: 0, y: -0.018315256, z: -0.49773642}
+  m_Size: {x: 1, y: 1.1800461, z: 0.0043935776}
+  m_Center: {x: 0, y: 0.44243026, z: -0.52261883}
 --- !u!1001 &3355924425223732776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -217,6 +217,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2482747842766196331, guid: 2209fd66c6b2a47fa9d17f2c466e3919, type: 3}
+      propertyPath: exit
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2482747842766196331, guid: 2209fd66c6b2a47fa9d17f2c466e3919, type: 3}
+      propertyPath: entry
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8712000992499624680, guid: 2209fd66c6b2a47fa9d17f2c466e3919, type: 3}
       propertyPath: m_Name
       value: Chunk_TL
@@ -269,5 +277,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4908099, y: 1.9750959, z: 0.02788353}
-  m_Center: {x: 2.001489, y: 0.974961, z: -4.9857445}
+  m_Size: {x: 1.4908099, y: 2.1257057, z: 0.09861946}
+  m_Center: {x: 2.001489, y: 1.1968787, z: -5.184304}

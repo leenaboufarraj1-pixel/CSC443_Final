@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Chunk
   length: 10
-  rowsPerChunk: 4
+  entry: -1
+  exit: -1
 --- !u!1 &2527492454966469410
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +137,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &7084878027858285664
 BoxCollider:
